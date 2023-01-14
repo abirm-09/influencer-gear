@@ -82,6 +82,11 @@ button {
 nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-menu-bar {
+    display: none;
 }
 
 nav .logo a {
@@ -102,6 +107,7 @@ nav .logo a {
 .nav-link ul {
     list-style: none;
     display: flex;
+    align-items: center;
     gap: 34px;
 }
 
@@ -136,6 +142,10 @@ nav .logo a {
     column-gap: 133px;
 }
 
+.hero-content>div {
+    flex: 1;
+}
+
 .hero-text-side .hero-title {
     color: var(--clr-text-primary);
     font-family: var(--ff-poppins);
@@ -165,11 +175,12 @@ nav .logo a {
 }
 
 .e-commerce-content {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     padding-block: 36px;
+    gap: 60px;
 }
 
 .e-commerce-content img {
@@ -207,6 +218,7 @@ nav .logo a {
     color: var(--clr-text-secondary);
     font-family: var(--ff-poppins);
     font-weight: 500;
+    font-size: 18px;
 }
 
 .collection .price {
@@ -326,4 +338,101 @@ nav .logo a {
     background-color: var(--clr-text-light-gray);
     font-size: 1rem;
     border-radius: 50%;
+}
+
+@media only screen and (max-width:576px) {
+    .section-title {
+        font-size: 1rem;
+    }
+
+    .main-header {
+        padding-top: 35px;
+    }
+
+    nav {
+        padding-inline: 1rem;
+    }
+
+    nav .logo a {
+        font-size: 16px;
+    }
+
+    .mobile-menu-bar {
+        display: block;
+    }
+
+    .nav-link ul {
+        display: none;
+    }
+
+    .hero-content {
+        flex-direction: column-reverse;
+    }
+
+    .hero-text-side .hero-title {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .hero-text-side .hero-description {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .hero-btn {
+        display: block;
+        margin-inline: auto;
+    }
+
+    .primary-btn {
+        font-size: 14px;
+        display: block;
+        margin-inline: auto;
+    }
+
+    .e-commerce-content {
+        gap: 20px;
+    }
+
+    .collections {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .collection .price {
+        font-weight: 700;
+    }
+
+    .collection-description>* {
+        font-weight: 400;
+    }
+
+    .featured-right .featured-title {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .featured-products {
+        flex-direction: column-reverse;
+    }
+
+    .featured-left img {
+        max-width: 100%;
+    }
+
+    button.featured-btn {
+        display: block;
+        margin-inline: auto;
+    }
+
+    .featured-right .featured-description {
+        text-align: center;
+    }
+
+    .footer-content .footer-title {
+        font-size: 16px;
+    }
+
+    .footer-content .copyright-text {
+        font-size: 12px;
+    }
 }
