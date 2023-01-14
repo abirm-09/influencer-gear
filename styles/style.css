@@ -284,3 +284,46 @@ nav .logo a {
 .featured-right .featured-btn {
     margin-top: 1rem;
 }
+
+/* =======================================
+                footer style
+==========================================*/
+.main-footer {
+    background-color: #0A0826;
+    padding-block: 50px;
+}
+
+.footer-content {
+    text-align: center;
+    line-height: 36px;
+}
+
+.footer-content .footer-title {
+    font-family: var(--ff-poppins);
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--clr-white);
+}
+
+.footer-content .copyright-text {
+    font-family: var(--ff-manrope);
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--clr-white);
+}
+
+.footer-social {
+    list-style: none;
+    color: var(--clr-white);
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-social li {
+    width: 32px;
+    height: 32px;
+    background-color: var(--clr-text-light-gray);
+    font-size: 1rem;
+    border-radius: 50%;
+}
